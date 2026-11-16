@@ -1,0 +1,178 @@
+.child-singlepro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
+.matt-containersingle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+
+}
+.singleprodimg{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.ratingsatrs{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.truckreturn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: rgb(249, 244, 244);
+    font-size: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+
+}
+.subtruck{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.btn-btn-cont{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #103F2E;
+}
+.buttonsubq{
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #103F2E;
+    font-weight: bold;
+}
+.buttonsubqb{
+     padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #103F2E;
+    color: white;
+    font-weight: bold;
+
+}
+.starsive{
+    color: orange;
+}
+.onetworeviews{
+    color: grey;
+    font-size: 15px;
+
+}
+.instockquan{
+    color: green;
+}
+.wishlistbttn{
+    border-radius: 10px;
+   height: fit-content;
+   padding: 10px;
+}
+.homeproducts{
+    text-decoration: none;
+    color: black;
+}
+.sublinkshomepro{
+    display: flex;
+    justify-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .child-singlepro {
+    margin-left: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .singleprodimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .child-singlepro {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+  .singleprodimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .truckreturn {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .btn-btn-cont {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttonsubq,
+  .buttonsubqb {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sublinkshomepro {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sublinkshomepro {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px; }
+}
+
+

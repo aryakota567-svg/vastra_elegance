@@ -1,0 +1,86 @@
+* {
+  font-family: serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  background: linear-gradient(180deg, #133624 0%, #194A31 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 2px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #E6C27A;
+  font-family: 'Playfair Display', Georgia, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.haprl-container {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #F5f2eb;
+}
+
+.navlink {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.user-info, .logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Hide Hamburger by default on Desktop */
+.hamburger {
+  display: none;
+  color: #E6C27A;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .haprl-container {
+    display: none; /* Hide container by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Sits exactly below the navbar */
+    left: 0;
+    width: 100%;
+    background: #194A31;
+    padding: 20px;
+    gap: 25px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Show menu when active class is triggered */
+  .haprl-container.active {
+    display: flex;
+  }
+}

@@ -1,0 +1,143 @@
+.wishlistprodcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.childcontainerwishli {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    background-color: #fff;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.childcontainerwishli:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-img-wrapper {
+    position: relative;
+    width: 280px;
+    height: 320px;
+}
+
+.wishlistimg {
+    width: 280px;
+    height: 320px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Floating Pink to Red Active Heart Transition --- */
+.wishlist-heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    
+    /* Configured: White circle block with your customized pink accent heart coloring */
+    background-color: white;
+    border: 2px solid red;
+    color: red; 
+}
+
+.wishlist-heart-btn svg {
+    font-size: 22px;
+}
+
+/* Instantly transforms elements into red style configurations when clicked */
+.wishlist-heart-btn:active {
+    transform: scale(0.9) rotate(-10deg);
+    color: #e63946 !important; /* Forces the heart to instantly turn red when clicked */
+    border-color: #e63946;
+    background-color: #ffeef0;
+}
+
+.wishlist-heart-btn:hover {
+    transform: scale(1.1);
+}
+
+.mattconwishli {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mattconwishli h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.mattconwishli h5 {
+    margin: 0;
+    font-size: 16px;
+    color: black; /* Harmonized layout price color tag */
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+  .wishlistprodcontainer {
+    gap: 20px;
+    margin: 20px 15px;
+  }
+
+  .childcontainerwishli {
+    width: calc(50% - 10px); /* Creates a smooth 2-column layout on tablets */
+    min-width: 220px;
+  }
+
+  .wishlist-img-wrapper {
+    height: 260px; /* Scales down image height naturally on smaller screens */
+  }
+
+  .mattconwishli h3 {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Devices (Up to 480px) */
+@media (max-width: 480px) {
+  .wishlistprodcontainer {
+    gap: 16px;
+    margin: 15px 10px;
+  }
+
+  .childcontainerwishli {
+    width: 100%; /* Drops into a single high-quality column layout for micro-screens */
+    max-width: 340px; /* Keeps cards cozy and readable */
+  }
+
+  .wishlist-img-wrapper {
+    height: 280px; 
+  }
+
+  /* Disable hover translations on mobile touch screens for a better user experience */
+  .childcontainerwishli:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}

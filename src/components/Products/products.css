@@ -1,0 +1,184 @@
+
+
+.prod-image{
+    width: 300px;
+    height: 360px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.product-child{
+    box-shadow: 0 4px 8px rgba(0, 0,0,0.2);
+    max-width: 300px;
+    border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+     
+}
+.product-child:hover{
+    transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+.pricenstock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+    margin: 0;
+
+}
+.prod-content{
+    padding-left: 15px;
+    padding-top: 10px;
+   
+}
+.stock{
+ background-color: rgb(180, 253, 180);
+ border-radius: 4px;
+ padding: 2px; 
+ font-size: 14px; 
+}
+.buttonuserna{
+     background: linear-gradient(180deg, #133624 0%, #194A31 100%);
+     margin-top: -1px;
+     margin-bottom: 30px;
+     padding: 15px;
+     border-radius: 10px;
+ 
+
+     
+}
+.usernameenjoys{
+    text-align: center;
+   
+    
+}
+        
+.displayuser{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+
+}
+.dispayuserstar{
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+
+}
+.welcomeback{
+    font-size: 20px;
+    color: white;
+}
+.discovertoday{
+    color: #7BD2C4;
+}
+.individualbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0,0,0.2); 
+    box-sizing: border-box;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: gray;  
+}
+
+.individualbtn h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+
+.individualbtn h4.active,
+.individualbtn h4:hover {
+  background-color:#078d5e;
+    color: white;
+}
+.addtocartbtn{
+    width: 270px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #103F2E;
+    font-weight: bold;
+    border:  1px solid #103F2E;
+   
+}
+.wishlistbtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+   
+}
+.wishlistbtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+   
+    background-color: white;
+    border: 2px solid gray;
+    color: gray; 
+}
+
+
+.wishlistbtn svg {
+    font-size: 20px;
+    stroke: black; 
+}
+
+
+.wishlistbtn.active {
+    background-color: transparent; 
+    border: 2px solid red;     
+    color: red;               
+}
+
+.wishlistbtn.active svg {
+    stroke: red;
+}
+

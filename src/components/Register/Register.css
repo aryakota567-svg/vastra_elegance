@@ -1,0 +1,107 @@
+
+.registermain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  background-color: beige;
+}
+
+.matform {
+  margin-left: 100px;
+  margin-top: 50px;
+  max-width: 400px;
+  width: 100%;
+
+}
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  width: 390px;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid gray;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.register-btn {
+  width: 390px;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #133624 0%, #194A31 100%);
+  color: white;
+  font-weight: bold;
+  border: 1px solid linear-gradient(180deg, #133624 0%, #194A31 100%);
+  box-sizing: border-box;
+}
+
+.imagelogin {
+  width: 700px;
+  height: 630px;
+  display: flex;
+  justify-content: flex-end;
+  object-fit: cover;
+}
+
+
+@media (max-width: 1200px) {
+  .registermain {
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .matform {
+    margin-left: 0;
+   
+  }
+
+  .imagelogin {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .registermain {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+  }
+
+ 
+  .imagelogin, 
+  .imagelogin + div, 
+  .registermain > div:nth-child(2) { 
+    display: none ; 
+  }
+
+  .matform {
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+
+  input, 
+  .register-btn {
+    width: 100% ;
+  }
+}
+
+.vastraelegancell{
+   font-family: 'Playfair Display', Georgia, serif;
+}
